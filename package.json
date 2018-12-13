@@ -1,0 +1,31 @@
+{
+  "name": "sass-loader-with-alias",
+  "version": "1.0.0",
+  "description": "test repo",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx webpack --context ./resolve-alias --config ./resolve-alias/webpack.config.js",
+    "start:patch": "npx webpack --context ./resolve-alias-patched --config ./resolve-alias-patched/webpack.config.js",
+    "start:ext": "npx webpack --context ./resolve-alias-with-exts --config ./resolve-alias-with-exts/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HairyRabbit/sass-loader-with-alias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HairyRabbit/sass-loader-with-alias/issues"
+  },
+  "homepage": "https://github.com/HairyRabbit/sass-loader-with-alias#readme",
+  "devDependencies": {
+    "css-loader": "^2.0.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

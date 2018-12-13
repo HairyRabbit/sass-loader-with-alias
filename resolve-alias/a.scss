@@ -1,0 +1,36 @@
+@import 'b';
+
+
+/// not alias
+
+// @import 'foo';
+@import 'foo/_index';
+@import 'foo/_index.scss';
+@import 'foo/index';
+@import 'foo/index.scss';
+
+@import 'foo/c';
+@import 'foo/c.scss';
+
+@import 'foo/_d';
+@import 'foo/_d.scss';
+@import 'foo/d';
+@import 'foo/d.scss';
+
+
+
+/// alias with @foo
+
+// @import '@foo';
+// @import '@foo/_index';
+@import '@foo/_index.scss';
+// @import '@foo/index';
+// @import '@foo/index.scss';
+
+// @import '@foo/c';
+@import '@foo/c.scss';
+
+// @import '@foo/_d';
+@import '@foo/_d.scss';
+// @import '@foo/d';
+// @import '@foo/d.scss';
